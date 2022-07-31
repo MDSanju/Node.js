@@ -7,7 +7,7 @@ const otp = randomId.slice(0, 8);
 class Logger extends EventEmitter {
   log(msg) {
     // Call event
-    this.emit("message", { id: otp, msg });
+    this.emit("message", { otp, msg });
   }
 }
 

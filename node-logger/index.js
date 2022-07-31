@@ -4,4 +4,4 @@ const logger = new Logger();
 
 logger.on("message", (data) => console.log("Called Listener", data));
 
-logger.log("OTP Received!");
+logger.log("OTP Code Sent!");
