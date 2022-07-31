@@ -92,3 +92,16 @@ const path = require("path");
 // console.log(extensionName);
 // const joinName = path.join(__dirname + "/../views");
 
+
+
+// Traversy media
+
+// Platform
+console.log(os.platform());
+
+// CPU Arch
+console.log(os.arch());
+
+// CPU Core Info
+
+console.log(os.cpus());
