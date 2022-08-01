@@ -5,7 +5,8 @@ const userRouter = require("./routes/users.route");
 app.use("/api/user", userRouter);
 
 app.use("/", (req, res) => {
-  res.send("<h2>This is Home Page!</h2>");
+  res.statusCode = 200;
+  res.sendFile(__dirname + "/views/index.html");
 });
 
 app.use((req, res) => {
