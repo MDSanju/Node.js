@@ -1,0 +1,17 @@
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 72px;
+}
+
+.hello_world {
+    color: #ff00008a;
+    font-size: 50px;
+}
+
+.node_img_logo {
+    width: 100px;
+    height: 100px;
+}
