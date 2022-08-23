@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const PORT = 5000;
 
@@ -6,6 +7,8 @@ const usersRouter = require("./routes/users.route");
 const productsRouter = require("./routes/products.route");
 
 app.use(express.urlencoded({ extended: true }));
+// CORS must use when fetch this API from any different origin. (example: if this server is used with any React application, that time this CORS must be used! Otherwise error shows, blocked this PORT/origin in frontend React app...)
+app.use(cors());
 app.use(usersRouter);
 app.use(productsRouter);
 
